@@ -2,8 +2,8 @@
   <div>
     <h1>{{message}}</h1>
     <input type="text" v-model='message'/>
-    <button type="submit" @click="addOne">Add One</button>
-    <button type="submit" @click="deleteOne">Delete One</button>
+    <button type="submit" @click="counter++">Add One</button>
+    <button type="submit" @click="counter--">Delete One</button>
     <p>{{counter}}</p>
   </div>
 </template>
@@ -17,12 +17,7 @@ data() {
   }
 },
 methods: {
-  addOne() {
-    this.counter++
-  },
-  deleteOne() {
-    this.counter--
-  }
+  
 }
 }
 </script>

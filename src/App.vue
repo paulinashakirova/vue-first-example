@@ -1,20 +1,20 @@
 <template>
-  <div id='app'>
+  <div id="app">
     <!-- 3. Use the component in the template -->
     <HelloWorld />
+    <Vue3DocsPractice />
   </div>
-
 </template>
 
 <script>
 //1. import the component
-import HelloWorld from './components/HelloWorld';
+import HelloWorld from "./components/HelloWorld";
 export default {
   //2. Declare (register) the component
   components: {
-    HelloWorld
-    }
-}
+    HelloWorld,
+  },
+};
 </script>
 
 <style>
